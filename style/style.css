@@ -76,3 +76,51 @@ body {
     cursor: pointer;
 
 }
+
+#card-box {
+    width: 1050px;
+}
+
+#card-box .card-title {
+    text-align: center;
+    margin: 20px 20px;
+}
+
+#card-box .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#card-box .card-text {
+    text-align: center;
+
+}
+
+#card-box .title {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 24px;
+    /* font-weight: 600; */
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+
+    border-radius: 8px;
+
+
+    background-color: rgba(82, 195, 3, 0.15);
+    border-radius: 8px;
+}
+
+#card-box h4 {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 47px;
+    letter-spacing: 0%;
+    text-align: center;
+}
