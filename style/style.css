@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* font-family: "Work Sans", sans-serif; */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -20,17 +20,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .hero-content {
     margin: 0 auto;
-    /* background-color: pink; */
     text-align: center;
-
-    width: 1094px;
-
-    height: 295px;
+    width: 100%;
+    max-width: 1080px;
+    padding: 20px;
 }
 
 #hero .subtitle {
@@ -38,15 +35,12 @@ body {
     font-size: 32px;
     font-weight: 600;
     line-height: 38px;
-    letter-spacing: 0%;
-    text-align: center;
 }
 
 #hero .title {
     color: rgb(255, 255, 255);
     font-size: 64px;
     font-weight: 700;
-    text-align: center;
     margin-top: 24px;
 }
 
@@ -57,70 +51,87 @@ body {
     line-height: 28px;
     opacity: 0.7;
     margin-top: 24px;
-
 }
 
 .btn {
     border-radius: 8px;
     background: rgb(82, 195, 3);
     color: rgb(255, 255, 255);
-
     font-size: 20px;
-
-    letter-spacing: 0%;
-    text-align: center;
     padding: 15px 25px;
-    border-style: none;
+    border: none;
     margin-top: 32px;
-
     cursor: pointer;
-
 }
 
 #card-box {
-    width: 1050px;
-}
-
-#card-box .card-title {
+    width: 100%;
+    max-width: 1080px;
+    margin: 100px auto;
     text-align: center;
-    margin: 20px 20px;
 }
 
-#card-box .card-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-#card-box .card-text {
-    text-align: center;
-
+#card-box .subtitle {
+    color: rgb(16, 16, 16);
+    font-size: 24px;
+    font-weight: 500;
+    opacity: 0.6;
 }
 
 #card-box .title {
     color: rgb(16, 16, 16);
-    font-family: Work Sans;
-    font-size: 24px;
-    /* font-weight: 600; */
-    line-height: 28px;
-    letter-spacing: 0%;
-    text-align: center;
-
-    border-radius: 8px;
-
-
-    background-color: rgba(82, 195, 3, 0.15);
-    border-radius: 8px;
+    font-size: 30px;
+    font-weight: 700;
 }
 
-#card-box h4 {
-    color: rgb(16, 16, 16);
-    font-family: Work Sans;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 47px;
-    letter-spacing: 0%;
+.card-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 30px);
+    max-width: calc(33.333% - 30px);
+    border: 1px solid #ccc;
+    padding: 20px;
     text-align: center;
+    background-color: #f9f9f9;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+
+.shop span {
+    display: inline-block;
+    background: rgba(82, 195, 3, 0.15);
+    padding: 14px 32px;
+    border-radius: 8px;
+    color: rgb(16, 16, 16);
+    font-weight: 600;
+}
+
+@media (max-width: 1080px) {
+    .hero-content {
+        padding: 20px;
+    }
+
+    .card-container {
+        flex-direction: row;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
 }
